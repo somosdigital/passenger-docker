@@ -1,5 +1,5 @@
-NAME = phusion/passenger
-VERSION = 0.9.19
+NAME = edumobi/passenger
+VERSION = 0.9.20
 
 .PHONY: all build_all \
 	build_customizable \
@@ -123,11 +123,11 @@ clean:
 	rm -rf full_image
 
 clean_images:
-	docker rmi phusion/passenger-customizable:latest phusion/passenger-customizable:$(VERSION) || true
-	docker rmi phusion/passenger-ruby20:latest phusion/passenger-ruby20:$(VERSION) || true
-	docker rmi phusion/passenger-ruby21:latest phusion/passenger-ruby21:$(VERSION) || true
-	docker rmi phusion/passenger-ruby22:latest phusion/passenger-ruby22:$(VERSION) || true
-	docker rmi phusion/passenger-ruby23:latest phusion/passenger-ruby23:$(VERSION) || true
-	docker rmi phusion/passenger-jruby91:latest phusion/passenger-jruby91:$(VERSION) || true
-	docker rmi phusion/passenger-nodejs:latest phusion/passenger-nodejs:$(VERSION) || true
-	docker rmi phusion/passenger-full:latest phusion/passenger-full:$(VERSION) || true
+	docker rmi edumobi/passenger-customizable:latest phusion/passenger-customizable:$(VERSION) || true
+	docker rmi edumobi/passenger-ruby20:latest phusion/passenger-ruby20:$(VERSION) || true
+	docker rmi edumobi/passenger-ruby21:latest phusion/passenger-ruby21:$(VERSION) || true
+	docker rmi edumobi/passenger-ruby22:latest phusion/passenger-ruby22:$(VERSION) || true
+	docker rmi edumobi/passenger-ruby23:latest phusion/passenger-ruby23:$(VERSION) || true
+	docker rmi edumobi/passenger-jruby91:latest phusion/passenger-jruby91:$(VERSION) || true
+	docker rmi edumobi/passenger-nodejs:latest phusion/passenger-nodejs:$(VERSION) || true
+	docker rmi edumobi/passenger-full:latest phusion/passenger-full:$(VERSION) || true
