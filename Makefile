@@ -136,12 +136,12 @@ clean:
 	rm -rf full_image
 
 clean_images:
-	docker rmi edumobi/passenger-customizable:latest phusion/passenger-customizable:$(VERSION) || true
-	docker rmi edumobi/passenger-ruby20:latest phusion/passenger-ruby20:$(VERSION) || true
-	docker rmi edumobi/passenger-ruby21:latest phusion/passenger-ruby21:$(VERSION) || true
-	docker rmi edumobi/passenger-ruby22:latest phusion/passenger-ruby22:$(VERSION) || true
-	docker rmi edumobi/passenger-ruby23:latest phusion/passenger-ruby23:$(VERSION) || true
-	docker rmi edumobi/passenger-ruby24:latest phusion/passenger-ruby24:$(VERSION) || true
-	docker rmi edumobi/passenger-jruby91:latest phusion/passenger-jruby91:$(VERSION) || true
-	docker rmi edumobi/passenger-nodejs:latest phusion/passenger-nodejs:$(VERSION) || true
-	docker rmi edumobi/passenger-full:latest phusion/passenger-full:$(VERSION) || true
+	docker rmi edumobi/passenger-customizable:latest edumobi/passenger-customizable:$(VERSION) || true
+	docker rmi edumobi/passenger-ruby20:latest edumobi/passenger-ruby20:$(VERSION) || true
+	docker rmi edumobi/passenger-ruby21:latest edumobi/passenger-ruby21:$(VERSION) || true
+	docker rmi edumobi/passenger-ruby22:latest edumobi/passenger-ruby22:$(VERSION) || true
+	docker rmi edumobi/passenger-ruby23:latest edumobi/passenger-ruby23:$(VERSION) || true
+	docker rmi edumobi/passenger-ruby24:latest edumobi/passenger-ruby24:$(VERSION) || true
+	docker rmi edumobi/passenger-jruby91:latest edumobi/passenger-jruby91:$(VERSION) || true
+	docker rmi edumobi/passenger-nodejs:latest edumobi/passenger-nodejs:$(VERSION) || true
+	docker rmi edumobi/passenger-full:latest edumobi/passenger-full:$(VERSION) || true
