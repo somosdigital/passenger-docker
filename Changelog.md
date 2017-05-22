@@ -1,3 +1,17 @@
+## 0.9.21 (release date: 2017-05-18)
+
+ * Upgraded to Phusion Passenger 5.1.4.
+ * Upgraded to baseimage-docker 0.9.21.
+ * Upgraded to Node.js 7.10.0.
+ * Fixed RVM warning about the PATH unnecessarily. Closes GH-150 and GH-178.
+ * Fixed a race condition in nginx-log-forwarder. Closes GH-183 and GH-182.
+
+## 0.9.20 (release date: 2017-01-10)
+
+ * Upgraded to Phusion Passenger 5.1.1.
+ * Upgraded to Ruby 2.3.3.
+ * Added support for Ruby 2.4.0.
+
 ## 0.9.19 (release date: 2016-07-11)
 
  * Upgraded to baseimage-docker 0.9.19.
