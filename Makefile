@@ -1,5 +1,5 @@
 NAME = edumobi/passenger
-VERSION = 0.9.21
+VERSION = 0.9.22
 
 .PHONY: all build_all \
 	build_customizable \
@@ -136,12 +136,12 @@ clean:
 	rm -rf full_image
 
 clean_images:
-	docker rmi edumobi/passenger-customizable:latest edumobi/passenger-customizable:$(VERSION) || true
-	docker rmi edumobi/passenger-ruby20:latest edumobi/passenger-ruby20:$(VERSION) || true
-	docker rmi edumobi/passenger-ruby21:latest edumobi/passenger-ruby21:$(VERSION) || true
-	docker rmi edumobi/passenger-ruby22:latest edumobi/passenger-ruby22:$(VERSION) || true
-	docker rmi edumobi/passenger-ruby23:latest edumobi/passenger-ruby23:$(VERSION) || true
-	docker rmi edumobi/passenger-ruby24:latest edumobi/passenger-ruby24:$(VERSION) || true
-	docker rmi edumobi/passenger-jruby91:latest edumobi/passenger-jruby91:$(VERSION) || true
-	docker rmi edumobi/passenger-nodejs:latest edumobi/passenger-nodejs:$(VERSION) || true
-	docker rmi edumobi/passenger-full:latest edumobi/passenger-full:$(VERSION) || true
+	docker rmi $(NAME)-customizable:latest $(NAME)-customizable:$(VERSION) || true
+	docker rmi $(NAME)-ruby20:latest $(NAME)-ruby20:$(VERSION) || true
+	docker rmi $(NAME)-ruby21:latest $(NAME)-ruby21:$(VERSION) || true
+	docker rmi $(NAME)-ruby22:latest $(NAME)-ruby22:$(VERSION) || true
+	docker rmi $(NAME)-ruby23:latest $(NAME)-ruby23:$(VERSION) || true
+	docker rmi $(NAME)-ruby24:latest $(NAME)-ruby24:$(VERSION) || true
+	docker rmi $(NAME)-jruby91:latest $(NAME)-jruby91:$(VERSION) || true
+	docker rmi $(NAME)-nodejs:latest $(NAME)-nodejs:$(VERSION) || true
+	docker rmi $(NAME)-full:latest $(NAME)-full:$(VERSION) || true

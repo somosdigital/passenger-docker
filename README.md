@@ -93,7 +93,7 @@ Basics (learn more at [baseimage-docker](http://phusion.github.io/baseimage-dock
 
 Language support:
 
- * Ruby 2.0.0, 2.1.9, 2.2.5, 2.3.3 and 2.4.0; JRuby 9.1.2.0.
+ * Ruby 2.0.0, 2.1.9, 2.2.5, 2.3.3 and 2.4.1; JRuby 9.1.2.0.
    * RVM is used to manage Ruby versions. [Why RVM?](#why_rvm)
    * 2.3.3 is configured as the default.
    * JRuby is installed from source, but we register an APT entry for it.
@@ -187,9 +187,15 @@ So put the following in your Dockerfile:
     CMD ["/sbin/my_init"]
 
     # If you're using the 'customizable' variant, you need to explicitly opt-in
-    # for features. Uncomment the features you want:
+    # for features. 
     #
-    #   Ruby support (packaged with Node support as well).
+    # N.B. these images are based on https://github.com/phusion/baseimage-docker, 
+    # so anything it provides is also automatically on board in the images below 
+    # (e.g. older versions of Ruby, Node, Python).  
+    # 
+    # Uncomment the features you want:
+    #
+    #   Ruby support
     #RUN /pd_build/ruby-2.0.*.sh
     #RUN /pd_build/ruby-2.1.*.sh
     #RUN /pd_build/ruby-2.2.*.sh
@@ -403,8 +409,8 @@ The default Ruby (what the `/usr/bin/ruby` command executes) is the latest Ruby 
     RUN bash -lc 'rvm --default use ruby-2.2.5'
     # Ruby 2.3.3
     RUN bash -lc 'rvm --default use ruby-2.3.3'
-    # Ruby 2.4.0
-    RUN bash -lc 'rvm --default use ruby-2.4.0'
+    # Ruby 2.4.1
+    RUN bash -lc 'rvm --default use ruby-2.4.1'
     # JRuby 9.1.2.0
     RUN bash -lc 'rvm --default use jruby-9.1.2.0'
 
